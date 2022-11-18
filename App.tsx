@@ -10,7 +10,9 @@ import { ActivityIndicator } from "react-native";
 import { StatusBar } from "react-native";
 import { Loading } from "@components/Loading";
 import { Groups } from "@screens/Groups";
-
+import { Filter } from "@components/Filter";
+import { Players } from "@screens/Players";
+import { Routes } from "./src/routes";
 export default function App() {
   const [fontsLoaded] = useFonts({ Roboto_400Regular, Roboto_700Bold });
   return (
@@ -20,7 +22,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded ? <NewGroup /> : <Loading />}
+      {fontsLoaded ? <Routes /> : <Loading />}
     </ThemeProvider>
   );
 }
