@@ -2,6 +2,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { Groups } from "@screens/Groups";
 import { Players } from "@screens/Players";
 import { NewGroup } from "@screens/Groups/NewGroup";
+
 const { Navigator, Screen } = createNativeStackNavigator();
 
 export function AppRoutes() {

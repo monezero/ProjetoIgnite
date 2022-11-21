@@ -3,9 +3,9 @@ import { Container, Icon, Title } from "./styles";
 type Props = TouchableOpacityProps & {
   title: string;
 };
-export function GroupCard({ title }: Props) {
+export function GroupCard({ title, onPress, ...rest }: Props) {
   return (
-    <Container>
+    <Container onPress={onPress} {...rest}>
       <Icon />
       <Title>{title}</Title>
     </Container>
